@@ -9,19 +9,38 @@ package exam.basics.parametersPassing;
  */
 public class LValue {
 
-    public static void main(String[] args) {
-        Box box = new Box("Bye!");
-//        getBoxMessageHello(box);
-        getBoxMessageWazup(box);
-        System.out.println(box);
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LValue.class);
+
+    public static void main(String[] args) throws InterruptedException {
+        final LValue lValue = new LValue();
+        final Box box = new Box("Hello!");
+
+        new Thread() {
+            @Override
+            public void run() {
+                lValue.readValue(box);
+            }
+        }.start();
+        box.setMessage("How are you?");
     }
 
-    public static void getBoxMessageHello(Box box) {
-        box.setMessage("Hello");
+    public void readValue(Box box) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        log.info("readValue: " + box);
     }
 
-    public static void getBoxMessageWazup(Box box) {
-        box = new Box("Wazup");
+    public void setValue(Box box) {
+        box.setMessage("Bye!");
+        log.info("setValue: " + box);
+    }
+
+    public void rewrite(Box box) {
+        box = new Box("Wazup?!");
+        log.info("rewrite: " + box);
     }
 }
 
