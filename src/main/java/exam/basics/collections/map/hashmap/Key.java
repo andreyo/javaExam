@@ -1,4 +1,4 @@
-package exam.basics.collections.hashmapandtreemap;
+package exam.basics.collections.map.hashmap;
 
 /**
  * User: andrey.osipov
@@ -7,12 +7,14 @@ package exam.basics.collections.hashmapandtreemap;
  */
 public class Key {
     private int hashCode;
+    private boolean equals;
 
     public Key() {
     }
 
-    public Key(int hashCode) {
+    public Key(int hashCode, boolean equals) {
         this.hashCode = hashCode;
+        this.equals = equals;
     }
 
     @Override
@@ -22,6 +24,6 @@ public class Key {
 
     @Override
     public boolean equals(Object obj) {
-        return true;
+        return equals;
     }
 }

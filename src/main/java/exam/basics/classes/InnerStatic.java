@@ -7,7 +7,7 @@ public class InnerStatic {
 
     public class Inner {
 //        ERROR
-//        static int a;
+//        statics int a;
     }
 
     static class Nested {
