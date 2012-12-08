@@ -1,4 +1,4 @@
-package exam.basics.classes;
+package exam.basics.classes.inner;
 
 /**
  * User: andrey.osipov

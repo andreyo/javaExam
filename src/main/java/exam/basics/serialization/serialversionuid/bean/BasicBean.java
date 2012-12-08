@@ -1,4 +1,4 @@
-package exam.basics.serialversionuid.bean;
+package exam.basics.serialization.serialversionuid.bean;
 
 import java.io.Serializable;
 

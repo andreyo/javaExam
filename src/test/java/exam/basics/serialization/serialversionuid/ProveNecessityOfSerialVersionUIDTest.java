@@ -1,6 +1,6 @@
-package exam.basics.serialversionuid;
+package exam.basics.serialization.serialversionuid;
 
-import exam.basics.serialversionuid.bean.Address;
+import exam.basics.serialization.serialversionuid.bean.Address;
 import org.junit.Before;
 import org.junit.Test;
 

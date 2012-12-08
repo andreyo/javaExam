@@ -1,6 +1,6 @@
-package exam.basics.serialversionuid;
+package exam.basics.serialization.serialversionuid;
 
-import exam.basics.serialversionuid.bean.Address;
+import exam.basics.serialization.serialversionuid.bean.Address;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
