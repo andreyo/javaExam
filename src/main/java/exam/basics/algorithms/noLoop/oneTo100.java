@@ -1,5 +1,7 @@
 package exam.basics.algorithms.noLoop;
 
+import exam.basics.classes.Constructors;
+
 import java.util.Arrays;
 
 /**

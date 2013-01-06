@@ -20,6 +20,10 @@ public class Constructors {
         message = s;
     }
 
+    Constructors(Character c) {
+        //what access modifier will be set?  PACKAGE-PRIVATE
+    }
+
     @Override
     public String toString() {
         return "Constructors{" + "message='" + message + '\'' + '}';

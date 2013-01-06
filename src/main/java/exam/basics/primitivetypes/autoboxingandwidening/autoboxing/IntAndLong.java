@@ -1,4 +1,4 @@
-package exam.basics.autoboxingandwidening.autoboxing;
+package exam.basics.primitivetypes.autoboxingandwidening.autoboxing;
 
 /**
  * Created by IntelliJ IDEA.

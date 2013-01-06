@@ -1,4 +1,4 @@
-package exam.basics.autoboxingandwidening.overflows;
+package exam.basics.primitivetypes.autoboxingandwidening.overflows;
 
 import java.io.File;
 
