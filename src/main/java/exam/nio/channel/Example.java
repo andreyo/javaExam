@@ -1,7 +1,5 @@
 package exam.nio.channel;
 
-import java.io.RandomAccessFile;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Elena
